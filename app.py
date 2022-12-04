@@ -55,6 +55,6 @@ def predict():
     label_dict = {0:'setosa', 1:'versicolor',2:'virginica'}
     prediction=label_dict[int(classifier.predict(input_data))]
 
-    return "Version 1: The predicted specie of iris flower is: "+prediction
+    return "Result 1 _The predicted specie of iris flower is: "+prediction
 
   
