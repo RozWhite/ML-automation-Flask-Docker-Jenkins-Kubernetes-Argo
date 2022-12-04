@@ -75,6 +75,6 @@ Now this application is Zero Touch, try doing a commit in GitHub and see how eac
 -------------------------------------------------------------------------------------------------------------
 <img src="images/commit2.png"  width="600"/></br></br>
 -------------------------------------------------------------------------------------------------------------
-<img src="images/dockerhub.JPG"  width="600"/></br></br>
+<img src="images/hub.JPG"  width="600"/></br></br>
 -------------------------------------------------------------------------------------------------------------
 <img src="images/result-1.png"  width="600"/></br></br>
