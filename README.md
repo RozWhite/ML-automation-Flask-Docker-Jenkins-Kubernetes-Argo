@@ -14,6 +14,9 @@ This project has the following steps:
 7.	Create a Jenkins job to update the Kubernetes manifest and modify the deployment file with the new image
 8.	Create a new application in Argo to automatically deploy the new image to the Kubernetes cluster
 
+#### Link to the Kubernetes manifest code of this project: 
+ <https://github.com/RozWhite/mlops-kubernetesmanifest.git>
+
 #### To set up the Webhook, please visit the previous version of this project: 
  <https://github.com/RozWhite/ML-automation-Flask-Docker-Jenkins-Kubernetes-Argo>
 ## 	Jenkins job to build a Docker image
@@ -24,7 +27,10 @@ The first job the first Job will automatically pull repo from the GitHub Repo ju
 ##  Jenkins job to update the Kubernetes manifest
 This job updates the Kubernetes manifest with new changes and pushes the new commit to the GitHub repository to modify the deployment file with the new image. In the Jenkins dashboard, click the new item, name it, and select Pipeline.</br></br> 
 <img src="images/Job2-1.png"  width="600"/></br>
-<img src="images/Job2.png"  width="600"/></br>
+<img src="images/Job2.png"  width="600"/></br></br>
+
+After both jobs are completed, the manifest code repository is updated with the new commit:</br></br>
+<img src="images/commit1.png"  width="600"/></br>
 
 ##  ArgoCD Start
 After installing kubectl, minikube and ArgoCD, run in a cmd: 
@@ -62,4 +68,13 @@ kubectl get svc
 
 ### New Commit:
 Now this application is Zero Touch, try doing a commit in GitHub and see how each step is automatic. I will now change result 1 to result 2 from the image above and commit the new changes to the code repository waiting for the new app to be deployed and update the application link:</br></br> 
+
+<img src="images/jenkins1.JPG" width="600"/></br></br>
+-------------------------------------------------------------------------------------------------------------
+<img src="images/jenkins2.JPG" width="600"/></br></br>
+-------------------------------------------------------------------------------------------------------------
+<img src="images/commit2.png"  width="600"/></br></br>
+-------------------------------------------------------------------------------------------------------------
+<img src="images/dockerhub.JPG"  width="600"/></br></br>
+-------------------------------------------------------------------------------------------------------------
 <img src="images/result-1.png"  width="600"/></br></br>
